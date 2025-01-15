@@ -17,3 +17,6 @@ HTML Prototype:
 
   Hybrid Visning
   - Typisk hvor du ikke skal gå videre til en ny side. (Men man bliver på siden, måske der kommer et vindue op på siden hvor vi) 
+
+
+Deadline: 22/01/2025 - Opfølgning (Overstående skal være færdig til prototypen)
