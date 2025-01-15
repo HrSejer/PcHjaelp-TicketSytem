@@ -1,5 +1,5 @@
 Dette er blot til opagve skrivning. 
-
+:)
 HTML Prototype: 
   -Opret sag/kunde m. adresse 
   -Rediger kunde & adresse
