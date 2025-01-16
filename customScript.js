@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// Håndtere klik-funktion på tabellen.
+// Håndtere klik-funktion på tabellen - Tickets.
 document.querySelectorAll('table tbody tr').forEach(row => {
 row.addEventListener('click', function() {
     // Henter data fra den klikkede række
@@ -35,7 +35,7 @@ row.addEventListener('click', function() {
     document.getElementById('modalTicketCreated').value = ticketCreated;  
 
     
-    var myModal = new bootstrap.Modal(document.getElementById('ticketModal'));
-    myModal.show();
+    var ticketModal = new bootstrap.Modal(document.getElementById('ticketModal'));
+    ticketModal.show();
 });
 });
