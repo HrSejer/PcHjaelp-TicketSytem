@@ -2,11 +2,11 @@ Dette er blot til opagve skrivning.
 
 
 HTML Prototype
-- Opret sag/kunde m. adresse
-- Rediger kunde & adresse
-- Søg i sager (Hybrid)
-- Oversigt: Tickets
-- Oversigt: Kunder
+- Opret sag/kunde m. adresse ✅
+- Rediger kunde & adresse ✅
+- Søg i sager (Hybrid) ✅
+- Oversigt: Tickets ✅
+- Oversigt: Kunder ✅
 
 
   Detalje Visning 
