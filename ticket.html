@@ -35,7 +35,7 @@
     </div>
   </div>
 
-  <!-- Data  -->
+  <!-- Data -->
   <table class="table">
     <thead>
       <tr>
@@ -157,6 +157,68 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="/customScript.js"></script>
+
+<!-- Modal -->
+<div class="modal fade" id="ticketModal" tabindex="-1" aria-labelledby="ticketModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ticketModalLabel">Rediger Ticket</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Luk"></button>
+      </div>
+      <div class="modal-body">
+        <form id="editTicketForm">
+          <div class="mb-3">
+            <label for="modalTicketNumber" class="form-label">Ticket Nummer</label>
+            <input type="text" class="form-control" id="modalTicketNumber" readonly>
+          </div>
+          <div class="mb-3">
+            <label for="modalTicketCustomerName" class="form-label">Kundenavn</label>
+            <input type="text" class="form-control" id="modalTicketCustomerName">
+          </div>
+          <div class="mb-3">
+            <label for="modalTicketEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="modalTicketEmail">
+          </div>
+          <div class="mb-3">
+            <label for="modalTicketTitle" class="form-label">Titel</label>
+            <input type="text" class="form-control" id="modalTicketTitle">
+          </div>
+          <div class="mb-3">
+            <label for="modalTicketDescription" class="form-label">Beskrivelse</label>
+            <textarea class="form-control" id="modalTicketDescription"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="modalTicketStatus" class="form-label">Status</label>
+            <select class="form-select" id="modalTicketStatus">
+              <option value="Åben">Åben</option>
+              <option value="I gang">I gang</option>
+              <option value="På hold">På hold</option>
+              <option value="Lukket">Lukket</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="modalTicketPriority" class="form-label">Prioritet</label>
+            <select class="form-select" id="modalTicketPriority">
+              <option value="Lav">Lav</option>
+              <option value="Mellem">Mellem</option>
+              <option value="Høj">Høj</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="modalTicketCreated" class="form-label">Oprettet</label>
+            <input type="text" class="form-control" id="modalTicketCreated" readonly>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuller</button>
+        <button type="button" class="btn btn-primary" id="saveTicketBtn">Gem ændringer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 
 </html>
