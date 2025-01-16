@@ -1,6 +1,5 @@
 body {
   /* This margin just makes the text easier to read. You can remove it if you want since it can mess with your other styles. */
-  margin-top: 40px;
 }
 
 /* This box class is purely used for explaining how the bootstrap grid system works. */
@@ -16,7 +15,17 @@ body {
   margin-top: 10px;
   width: 200px;
 }
+
 #customerButton {
+  margin-right: 10px;
+
+}
+#ticketBtn{
+  margin-right: 10px;
+
+}
+
+#sagBtn{
   margin-right: 10px;
 
 }
@@ -35,7 +44,7 @@ height: 200px;
 
 #SagsHistorikBox {
 margin-top: 70px;
-height: 270px;
+height: 210px;
 }
 
 body::before {
