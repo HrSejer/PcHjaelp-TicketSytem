@@ -11,35 +11,29 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// Håndtere klik-funktion på tabellen - Tickets (ændret fra dobbeltklik til enkeltklik).
+// Håndtere klik-funktion på tabellen - Tickets.
 document.querySelectorAll('table tbody tr').forEach(row => {
   row.addEventListener('click', function () {
-    // Tjek, om klikket virker ved at logge rækkeindholdet
     console.log('Klikket på række: ', this);
 
-    // Tjek om cellerne er tilgængelige
-    if (this.cells.length >= 8) { 
-      // Henter data fra den klikkede række
+    if (this.cells.length >= 7) { 
       var ticketNumber = this.cells[0].textContent;
       var ticketCustomerName = this.cells[1].textContent;
       var ticketEmail = this.cells[2].textContent;
       var ticketTitle = this.cells[3].textContent;
-      var ticketDescription = this.cells[7].textContent; 
-      var ticketStatus = this.cells[4].textContent;
-      var ticketPriority = this.cells[5].textContent;
-      var ticketCreated = this.cells[6].textContent;
+      var ticketDescription = this.cells[4].textContent; 
+      var ticketStatus = this.cells[5].textContent;
+      var ticketCreated = this.cells[7].textContent;
 
-      // Fylder modal felterne med data fra den klikkede række
+
       document.getElementById('modalTicketNumber').value = ticketNumber;
       document.getElementById('modalTicketCustomerName').value = ticketCustomerName;
       document.getElementById('modalTicketEmail').value = ticketEmail;
       document.getElementById('modalTicketTitle').value = ticketTitle;
       document.getElementById('modalTicketDescription').value = ticketDescription;
       document.getElementById('modalTicketStatus').value = ticketStatus;
-      document.getElementById('modalTicketPriority').value = ticketPriority;
       document.getElementById('modalTicketCreated').value = ticketCreated;
 
-      // Åbner modal vinduet
       var ticketModal = new bootstrap.Modal(document.getElementById('ticketModal'));
       ticketModal.show();
     } else {
@@ -48,34 +42,33 @@ document.querySelectorAll('table tbody tr').forEach(row => {
   });
 });
 
-// Håndtere klik-funktion på tabellen - Tickets.
+// Håndtere klik-funktion på tabellen - Kunder.
 document.querySelectorAll('table tbody tr').forEach(row => {
-  row.addEventListener('click', function() {
-      // Henter data fra den klikkede række
-      var kundeNumber = this.cells[0].textContent;
-      var kundeFirstname = this.cells[1].textContent;
-      var kundeLastname = this.cells[2].textContent;
-      var kundePhoneNumber = this.cells[3].textContent;
-      var kundeEmail = this.cells[4].textContent;
-      var kundeAdresse = this.cells[5].textContent;
-      var kundeSreetnumber = this.cells[6].textContent;
-      var kundeCity = this.cells[7].textContent;
-      var kundeZipCode = this.cells[8].textContent;
-  
-      // Opdaterer modalindholdet med inputfelter for redigering
-      document.getElementById('modalKundeNumber').value = kundeNumber;  
-      document.getElementById('modalKundefornavn').value = kundeFirstname;
-      document.getElementById('modalKundeefternavn').value = kundeLastname;
-      document.getElementById('modalKundetelefon').value = kundePhoneNumber;
-      document.getElementById('modalKundeEmail').value = kundeEmail;
-      document.getElementById('modalKundeadresse').value = kundeAdresse;
-      document.getElementById('modalStreetnumber').value = kundeSreetnumber;  
-      document.getElementById('modalCity').value = kundeCity;  
-      document.getElementById('modalZipCode').value = kundeZipCode;  
-  
-      
-      var ticketModal = new bootstrap.Modal(document.getElementById('kundeModal'));
-      ticketModal.show();
+  row.addEventListener('click', function () {
+    var kundeNumber = this.cells[0].textContent;
+    var kundeFirstname = this.cells[1].textContent;
+    var kundeLastname = this.cells[2].textContent;
+    var kundePhoneNumber = this.cells[3].textContent;
+    var kundeEmail = this.cells[4].textContent;
+    var kundeAdresse = this.cells[5].textContent;
+    var kundeSreetnumber = this.cells[6].textContent;
+    var kundeCity = this.cells[7].textContent;
+    var kundeZipCode = this.cells[8].textContent;
+
+    document.getElementById('modalKundeNumber').value = kundeNumber;
+    document.getElementById('modalKundefornavn').value = kundeFirstname;
+    document.getElementById('modalKundeefternavn').value = kundeLastname;
+    document.getElementById('modalKundetelefon').value = kundePhoneNumber;
+    document.getElementById('modalKundeEmail').value = kundeEmail;
+    document.getElementById('modalKundeadresse').value = kundeAdresse;
+    document.getElementById('modalStreetnumber').value = kundeSreetnumber;
+    document.getElementById('modalCity').value = kundeCity;
+    document.getElementById('modalZipCode').value = kundeZipCode;
+
+
+    var ticketModal = new bootstrap.Modal(document.getElementById('kundeModal'));
+    ticketModal.show();
   });
-  });
+});
+
 
