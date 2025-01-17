@@ -71,3 +71,4 @@ document.querySelectorAll('table tbody tr').forEach(row => {
   });
 });
 
+
