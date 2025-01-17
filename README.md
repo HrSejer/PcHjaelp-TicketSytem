@@ -1,1 +1,1 @@
-Dette er blot til opagve skrivning. 
+Dette er blot til en prototype.
