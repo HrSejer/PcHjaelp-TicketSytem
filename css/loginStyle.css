@@ -50,8 +50,8 @@ body {
   }
 
   .pchjalp-text {
-    text-align: center;
-        
+    text-align: center;   
+    font-weight: bold; 
   }
   
   /* Højre sektion */
@@ -93,9 +93,5 @@ body {
   
   button.btn-primary:hover {
     background-color: #add659;
-  }
-
-  #loginBtnMicrosoft {
-    
   }
   
