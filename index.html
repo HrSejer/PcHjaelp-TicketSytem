@@ -39,7 +39,7 @@
     <div class="container">
         <div class="row">
             <!-- KundeOplysninger -->
-            <div class="col-md-6 border mb-4" id="KundeOplysninger">
+            <div class="col-md-6 border" id="KundeOplysninger">
                 <p>Kundens Fornavn og Efternavn</p>
                 <div class="input-group mb-4">
                     <input type="text" placeholder="Fornavn" class="form-control">
@@ -70,20 +70,20 @@
             </div>
 
 
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <div class="d-flex flex-column gap-4">
                     <!-- SagsBeskrivelseBox -->
-                    <div class="border border-black border-1 p-3" id="SagsBeskrivelseBox">
+                    <div class="border p-3" id="SagsBeskrivelseBox">
                         <h5>Sags Beskrivelse</h5>
                         <textarea class="form-control" rows="5"
                             placeholder="Indtast sags beskrivelse her..."></textarea>
                     </div>
-                    <form class="d-flex" role="button">
-                        <button class="btn btn-success me-2" type="submit">Gem</button>
-                        <button class="btn btn-danger" type="submit">Clear</button>
+                    <form class="d-flex justify-content-end" style="gap: 8px">
+                        <button class="btn btn-success" type="submit">Gem</button>
+                        <button class="btn btn-danger" type="submit">Ryd</button>
                     </form>
                     <!-- SagsHistorikBox -->
-                    <div class="border border-black border-1 p-3" id="SagsHistorikBox">
+                    <div class="border p-3" id="SagsHistorikBox">
                         <h5>Sags Historik</h5>
                     </div>
                 </div>
