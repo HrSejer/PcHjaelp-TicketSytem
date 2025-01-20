@@ -72,3 +72,28 @@ document.querySelectorAll('table tbody tr').forEach(row => {
 });
 
 
+// Håndtere klik-funktion på tabellen - Kunder.
+document.querySelectorAll('table tbody tr').forEach(row => {
+  row.addEventListener('click', function () {
+    var userNumber = this.cells[0].textContent;
+    var userFirstname = this.cells[1].textContent;
+    var userLastname = this.cells[2].textContent;
+    var userUsername = this.cells[3].textContent;
+    var userEmail = this.cells[4].textContent;
+    var userPhoneNumber = this.cells[5].textContent;
+    var userrole = this.cells[6].textContent;
+
+    document.getElementById('modalUserNumber').value = userNumber;
+    document.getElementById('modalUserfornavn').value = userFirstname;
+    document.getElementById('modalUserefternavn').value = userLastname;
+    document.getElementById('modalUserUsername').value = userUsername;
+    document.getElementById('modalUserEmail').value = userEmail;
+    document.getElementById('modalUserPhoneNumber').value = userPhoneNumber;
+    document.getElementById('modalUserRole').value = userrole;
+
+
+    var ticketModal = new bootstrap.Modal(document.getElementById('userModal'));
+    ticketModal.show();
+  });
+});
+
